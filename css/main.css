@@ -108,6 +108,10 @@ a:hover {
   width: 1140px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +160,16 @@ a:hover {
           transform: translate(-50%, 0%);
 }
 
+.header__footer {
+  display: none;
+}
+
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .nav {
   font-size: 14px;
 }
@@ -172,5 +186,22 @@ a:hover {
 .info {
   position: relative;
   font-size: 18px;
+}
+.info--map, .info--tel {
   padding-left: 35px;
+}
+.info--map::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info--map::before {
+  background-image: url("./../img/header/map.svg");
+}
+.info--tel::before {
+  background-image: url("./../img/header/phone.svg");
 }
