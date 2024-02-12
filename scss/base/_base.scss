@@ -37,3 +37,10 @@ a {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+
+.title-2 {
+  font-size: 36px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
+}
