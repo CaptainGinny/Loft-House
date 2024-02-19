@@ -794,6 +794,12 @@ a:hover {
   padding-bottom: 51px;
   background-color: #2d343c;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
 
 .footer__grid {
   display: grid;
@@ -801,6 +807,12 @@ a:hover {
   gap: 30px;
   font-size: 14px;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 959px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
 }
 
 .footer__logo {

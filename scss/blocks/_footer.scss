@@ -2,6 +2,11 @@
   padding-top: 72px;
   padding-bottom: 51px;
   background-color: $footer-bg;
+
+  @include mediaTablet {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
 }
 
 .footer__grid {
@@ -10,6 +15,11 @@
   gap: 30px;
   font-size: 14px;
   letter-spacing: 0.05em;
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
 }
 
 .footer__logo {
