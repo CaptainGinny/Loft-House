@@ -417,6 +417,11 @@ a:hover {
   font-size: 400px;
   font-family: "Playfair Display", serif;
 }
+@media screen and (max-width: 959px) {
+  .benefits {
+    padding: 60px 0;
+  }
+}
 
 .benefits__row {
   display: -webkit-box;
